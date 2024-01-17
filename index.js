@@ -18,22 +18,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    var audioSources = [
-        './part1.mpeg',
-        './part2.mp3',
-        './part3.mp3'
-    ];
-
-    function playSequentialAudio(index) {
-        if (index < audioSources.length) {
-            var audio = new Audio(audioSources[index]);
-            audio.play();
-
-            audio.addEventListener('ended', function () {
-                playSequentialAudio(index + 1);
-            });
+        var audioSources = [
+            './part1.mpeg',
+            './part2.mp3',
+            './part3.mp3'
+        ];
+    
+        var currentIndex = 0;
+        function playAudio() {
+            if (currentIndex < audioSources.length) {
+                var audio = new Audio(audioSources[currentIndex]);
+                
+                audio.play().then(() => {
+                    currentIndex++;
+                }).catch((error) => {
+                    console.error("Error playing audio:", error);
+                });
+            }
         }
-    }
 
-    playSequentialAudio(0);
-});
+        if (window.matchMedia("(max-width: 600px)").matches) {
+            console.log("h")
+            document.body.addEventListener('click', playAudio.bind(this));
+        }
+    });
