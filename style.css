@@ -69,7 +69,7 @@
     width: min-content;
     height: 100%;
   }
-  h1 {
+  .Bigtext {
     width: calc(40px + 500px);
     font-size: 4em;
   }
@@ -146,6 +146,9 @@
     text-align: center;
     background: black;
   }
+  h1{
+    font-size: 4rem;
+  }
   @keyframes shake {
     to {
       transform: translateY(5px);
@@ -168,6 +171,9 @@
     .SmallDevices{
         width: 100%;
         min-height: 100vh;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
   }
