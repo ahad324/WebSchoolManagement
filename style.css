@@ -1,179 +1,179 @@
-@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: "Lemon", serif;  
-    overflow: hidden;
-    text-shadow: 5px 5px 10px black;
-  }
-  section {
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(bg.svg);
-    background-size: cover;
-    background-repeat: space;
-    background-position: 50% 15%;
-    background-color: black;
-    overflow: hidden;
-    color: #eee;
-    /*background-color: #4158D0;
-        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
-
-    /*background-color: #FFE53B;
-        background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);*/
-  }
-  section img {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-  }
-  .icon1 {
-    top: 58%;
-    left: 15%;
-    animation: shake 1.5s alternate-reverse infinite;
-  }
-  .icon2 {
-    width: 250px;
-    right: 5%;
-    top: 50%;
-    animation: shake 2.5s alternate-reverse infinite;
-  }
-  .icon3 {
-    z-index: -0.5;
-    left: 15%;
-    top: 3%;
-    animation: shake 2s alternate-reverse infinite;
-  }
-
-  .quote1,
-  .quote2 {
-    position: absolute;
-  }
-  .quote1 {
-    top: 25%;
-    transform: rotate(180deg) translateX(160px);
-  }
-  .quote2 {
-    top: 60%;
-    transform: translateX(180px);
-  }
-
-  section span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: min-content;
-    height: 100%;
-  }
-  .Bigtext {
-    width: calc(40px + 500px);
-    font-size: 4em;
-  }
-  section .glass {
-    cursor:cell;
-    position: absolute;
-    width: 150px;
-    height: 40px;
-    border-radius: 100px;
-    background: transparent;
-    border: 0.1px solid #eee;
-    box-shadow: 0.1px 0.1px 1px black;
-    backdrop-filter: blur(5px);
-    transition: 1s all ease;
-  }
-  .glass1 {
-    top: 20%;
-    right: 20%;
-    animation: shake 1s alternate-reverse infinite;
-  }
-  .glass2 {
-    top: 40%;
-    left: 10%;
-    animation: shake 2s alternate-reverse infinite;
-  }
-  .glass3 {
-    top: 80%;
-    animation: shake 2s alternate-reverse infinite;
-  }
-  .glass1 a{
-    text-decoration: none;
-    color: #eee;
-  }
-.glass.active{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: transparent;
-    backdrop-filter: blur(100px);
-    border: none;
-    animation: none;
-    width: 100%;
-    height: 100%;
-    transition: 1s all ease;
-    border-radius: 0;
-    z-index: 99999;
-}
-.glass-message {
-    display: none;
-}
-
-.glass.active .glass-message {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-}
-.glass.active p , .glass.active a{
-    display: none;
-}
-.glass.active .downloadagain{
-    display: contents;
-    color: black;
-    text-transform: capitalize;
-    text-shadow: 1px 1px  20px rgb(104, 90, 90);
-}
-
-
-  .SmallDevices{
-    display: none;
-    color: rgb(255, 0, 0);
-    text-align: center;
-    background: black;
-  }
-  h1{
-    font-size: 4rem;
-  }
-  @keyframes shake {
-    to {
-      transform: translateY(5px);
+    @import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Lemon", serif;  
+        overflow: hidden;
+        text-shadow: 5px 5px 10px black;
     }
-  }
-  @media (max-width:900px) {
-    .icon3{
-        left: 2%;
-        width: 150px;
-    }
-    .icon1{
-        left: 3%;
-        width: 100px;
-    }
-  }
-  @media (max-width:600px) {
-    section{
-        display: none;
-    }
-    .SmallDevices{
+    section {
         width: 100%;
         min-height: 100vh;
+        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        background-image: url(bg.svg);
+        background-size: cover;
+        background-repeat: space;
+        background-position: 50% 15%;
+        background-color: black;
+        overflow: hidden;
+        color: #eee;
+        /*background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
+
+        /*background-color: #FFE53B;
+            background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);*/
     }
-  }
+    section img {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+    .icon1 {
+        top: 58%;
+        left: 15%;
+        animation: shake 1.5s alternate-reverse infinite;
+    }
+    .icon2 {
+        width: 250px;
+        right: 5%;
+        top: 50%;
+        animation: shake 2.5s alternate-reverse infinite;
+    }
+    .icon3 {
+        z-index: -0.5;
+        left: 15%;
+        top: 3%;
+        animation: shake 2s alternate-reverse infinite;
+    }
+
+    .quote1,
+    .quote2 {
+        position: absolute;
+    }
+    .quote1 {
+        top: 25%;
+        transform: rotate(180deg) translateX(160px);
+    }
+    .quote2 {
+        top: 60%;
+        transform: translateX(180px);
+    }
+
+    section span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: min-content;
+        height: 100%;
+    }
+    .Bigtext {
+        width: calc(40px + 500px);
+        font-size: 4em;
+    }
+    section .glass {
+        cursor:cell;
+        position: absolute;
+        width: 150px;
+        height: 40px;
+        border-radius: 100px;
+        background: transparent;
+        border: 0.1px solid #eee;
+        box-shadow: 0.1px 0.1px 1px black;
+        backdrop-filter: blur(5px);
+        transition: 1s all ease;
+    }
+    .glass1 {
+        top: 20%;
+        right: 20%;
+        animation: shake 1s alternate-reverse infinite;
+    }
+    .glass2 {
+        top: 40%;
+        left: 10%;
+        animation: shake 2s alternate-reverse infinite;
+    }
+    .glass3 {
+        top: 80%;
+        animation: shake 2s alternate-reverse infinite;
+    }
+    .glass1 a{
+        text-decoration: none;
+        color: #eee;
+    }
+    .glass.active{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: transparent;
+        backdrop-filter: blur(100px);
+        border: none;
+        animation: none;
+        width: 100%;
+        height: 100%;
+        transition: 1s all ease;
+        border-radius: 0;
+        z-index: 99999;
+    }
+    .glass-message {
+        display: none;
+    }
+
+    .glass.active .glass-message {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    .glass.active p , .glass.active a{
+        display: none;
+    }
+    .glass.active .downloadagain{
+        display: contents;
+        color: black;
+        text-transform: capitalize;
+        text-shadow: 1px 1px  20px rgb(104, 90, 90);
+    }
+
+
+    .SmallDevices{
+        display: none;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        background: black;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    @keyframes shake {
+        to {
+        transform: translateY(5px);
+        }
+    }
+    @media (max-width:900px) {
+        .icon3{
+            left: 2%;
+            width: 150px;
+        }
+        .icon1{
+            left: 3%;
+            width: 100px;
+        }
+    }
+    @media (max-width:600px) {
+        section{
+            display: none;
+        }
+        .SmallDevices{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
